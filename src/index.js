@@ -13,7 +13,6 @@ import Product from './component/product/product'
 import Home from './component/home/home'
 import Navbar from './component/navbar/navbar'
 import Footer from './component/footer/footer'
-import Slideshow from './component/home/slideshow/slideshow'
 import Popup from './component/popup/popup'
 
 render(

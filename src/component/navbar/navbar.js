@@ -16,74 +16,83 @@ export default function Navbar() {
         setPage(window.location.pathname);
     }, [])
     return (
-        <> 
-                <div className={style.container}>
-                    <div className={style.logoContainner}>
-
+        <>
+            <div className={style.container}>
+                <div className={style.logoContainner}>
+                    <Link to="/"
+                        onClick={() => setPage('/')}>
                         <img src={img1} />
+                    </Link>
+                    <Link to="/"
+                        onClick={() => setPage('/')}>
                         <span>
                             <div className={style.nameCompany1}>KATE PLK </div>
                             <div className={style.nameCompany2}>บริษัท เคท พีแอลเค จำกัด</div>
                         </span>
+                    </Link>
 
-                        <div className={style.search}>
-                            <FontAwesomeIcon icon={faSearch} />
-                            <input id="" type="search" placeholder="Find Product" />
-                        </div>
 
-                    </div>
-                    <div className={style.menuContainer}>
-                        {/* HOME */}
-                        <div className={page == '/' ? style.menuActive : style.menu }>
-                            <Link to="/"
-                                  onClick={() => setPage('/')}>
-                                <div className={style.menuIcon}>
-                                    <FontAwesomeIcon icon={faHome} />
-                                </div>
-                                <div className={style.menuText}>HOME</div>
-                            </Link>
-                        </div>
-                        {/* PRODUCT */}
-                        <div className={page == '/product' ? style.menuActive : style.menu}>
-                            <Link to="/product"
-                                  onClick={() => setPage('/product')}>
-                                <div className={style.menuIcon}>
-                                    <FontAwesomeIcon icon={faMicrochip} />
-                                </div>
-                                <div className={style.menuText}>PRODUCT</div>
-                            </Link>
-                        </div>
-                        {/* ABOUT US */}
-                        <div className={style.menu}>
-                            <Link to="/about">
-                                <div className={style.menuIcon}>
-                                    <FontAwesomeIcon icon={faUser} />
-                                </div>
-                                <div className={style.menuText}>ABOUT US</div>
-                            </Link>
-                        </div>
-                        {/* CONTACT */}
-                        <div className={style.menu}>
-                            <Link to="/contact">
-                                <div className={style.menuIcon}>
-                                    <FontAwesomeIcon icon={faPhone} />
-                                </div>
-                                <div className={style.menuText}>CONTACT</div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className={style.hamburger} onClick={displayNav}>
-                        <FontAwesomeIcon icon={faBars} />
+                    <div className={style.search}>
+                        <FontAwesomeIcon icon={faSearch} />
+                        <input id="" type="search" placeholder="Find Product" />
                     </div>
 
                 </div>
+                <div className={style.menuContainer}>
+                    {/* HOME */}
+                    <div className={page == '/' ? style.menuActive : style.menu}>
+                        <Link to="/"
+                            onClick={() => setPage('/')}>
+                            <div className={style.menuIcon}>
+                                <FontAwesomeIcon icon={faHome} />
+                            </div>
+                            <div className={style.menuText}>HOME</div>
+                        </Link>
+                    </div>
+                    {/* PRODUCT */}
+                    <div className={page == '/product' ? style.menuActive : style.menu}>
+                        <Link to="/product"
+                            onClick={() => setPage('/product')}>
+                            <div className={style.menuIcon}>
+                                <FontAwesomeIcon icon={faMicrochip} />
+                            </div>
+                            <div className={style.menuText}>PRODUCT</div>
+                        </Link>
+                    </div>
+                    {/* ABOUT US */}
+                    <div className={page == '/about' ? style.menuActive : style.menu}>
+                        <Link to="/about"
+                            onClick={() => setPage('/about')}>
+                            <div className={style.menuIcon}>
+                                <FontAwesomeIcon icon={faUser} />
+                            </div>
+                            <div className={style.menuText}>ABOUT US</div>
+                        </Link>
+                    </div>
+                    {/* CONTACT */}
+                    <div className={page == '/contact' ? style.menuActive : style.menu}>
+                        <Link to="/contact"
+                            onClick={() => setPage('/contact')}>
+                            <div className={style.menuIcon}>
+                                <FontAwesomeIcon icon={faPhone} />
+                            </div>
+                            <div className={style.menuText}>CONTACT</div>
+                        </Link>
+                    </div>
+                </div>
+                <div className={style.hamburger} onClick={displayNav}>
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
+
+            </div>
 
             {//jsx
                 display && (
                     <div className={style.conMobile}>
                         {/* HOME */}
                         <div className={style.menuMobile}>
-                            <Link to="/">
+                            <Link to="/"
+                                onClick={displayNav}>
                                 <div className={style.menuMobileIcon}>
                                     <FontAwesomeIcon icon={faHome} />
                                 </div>
@@ -93,7 +102,8 @@ export default function Navbar() {
                         </div>
                         {/* PRODUCT */}
                         <div className={style.menuMobile}>
-                            <Link to="/product">
+                            <Link to="/product"
+                                onClick={displayNav}>
                                 <div className={style.menuMobileIcon}>
                                     <FontAwesomeIcon icon={faMicrochip} />
                                 </div>
@@ -102,7 +112,8 @@ export default function Navbar() {
                         </div>
                         {/* ABOUT US */}
                         <div className={style.menuMobile}>
-                            <Link to="/about">
+                            <Link to="/about"
+                                onClick={displayNav}>
                                 <div className={style.menuMobileIcon}>
                                     <FontAwesomeIcon icon={faUser} />
                                 </div>
@@ -111,7 +122,8 @@ export default function Navbar() {
                         </div>
                         {/* CONTACT */}
                         <div className={style.menuMobile}>
-                            <Link to="/contact">
+                            <Link to="/contact"
+                                onClick={displayNav}>
                                 <div className={style.menuMobileIcon}>
                                     <FontAwesomeIcon icon={faPhone} />
                                 </div>

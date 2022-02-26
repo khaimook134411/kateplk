@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressBook, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 export default function Popup() {
 
-    const [showState, setShowState] = useState(false)
+    const [showState, setShowState] = useState(true)
 
     return (
         <>
@@ -26,15 +26,22 @@ export default function Popup() {
                         </div>
                     </div>
                     <div className={style.contactContainer}>
-                        <div className={style.conPhone}>
-                            PHONE
+                        <a href="tel:0816157464" target="_blank">
+                            <div className={style.conPhone}>
+                                PHONE
                         </div>
-                        <div className={style.conLine}>
-                            LINE
+                        </a>
+                        <a href="https://line.me/ti/p/vxMsaMNMLE" target="_blank">
+                            <div className={style.conLine}>
+                                LINE
                         </div>
-                        <div className={style.conMail}>
-                            MAIL
+                        </a>
+                        <a href="mailto:katesaraporn@kateplk.co.th" target="_blank">
+                            <div className={style.conMail}>
+                                MAIL
                         </div>
+                        </a>
+
                     </div>
                 </div>
             }

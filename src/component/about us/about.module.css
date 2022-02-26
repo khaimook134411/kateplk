@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
 .container{
-    padding-top: 200px;
+    padding-top: 130px;
+    background-color: #fff;
+}
+.conRow1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 190px;
+    gap: 3rem;
+}
+.conContent{
+    padding: 0px 20px;
+}
+.content{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: 2.5em;
+    color: gray;
+}
+.headText{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: rgb(93, 93, 93);
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+.Slideshow{
+    width: 360px;
+    height: 240px;
+    z-index: 0;
+}
+@media only screen and (max-width:1200px){
+    .conRow1{
+        padding: 50px 50px;
+        gap: 2rem;
+    }
+}
+@media only screen and (max-width:1000px){
+    .container{
+        padding-top: 110px;
+    }
+    .conRow1{
+        padding: 50px 30px;
+        gap: 1rem;
+    }
+    .content{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:900px){
+    .container{
+        padding-top: 80px;
+    }
+    .conRow1{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+    .conContent{
+        padding: 10px 25px;
+    }
+    .headText{
+        font-size: 20px;
+    }
+    .content{
+        font-size: 14px;
+    }
+
 }

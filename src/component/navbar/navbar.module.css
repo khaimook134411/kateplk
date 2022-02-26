@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    transition: 0.2s ease;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
     justify-content: center;
     box-shadow: 0 0 5px rgb(0 0 0 / 70%);
     width: 100vw;
+    top: 0;
     position: fixed;
     z-index: 999;
 }
@@ -35,6 +37,9 @@ body{
     margin-right: 15px;
 }
 .logoContainner img:hover{
+    cursor: pointer;
+}
+.logoContainner span:hover{
     cursor: pointer;
 }
 .logoContainner input{
@@ -77,8 +82,14 @@ input[type=search]{
     /* padding-left: 50vw; */
 }
 
-.menuActive{
-    background-color: blue;
+.menuActive a{
+    color: #286efa;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    /* border-bottom: 1px solid #286efa; */
 }
 
 .menu a{
@@ -91,7 +102,7 @@ input[type=search]{
 }
 .menu:hover a{
     cursor: pointer;
-    color: #036;
+    transform: scale(1.1);
     /* opacity: 0.7; */
 }
 .menuIcon{
@@ -150,7 +161,9 @@ input[type=search]{
         width: 100vw;
         float: right;
         background-color: #fff;
-        margin-top: 95px;
+        
+        top: 0;
+        margin-top: 98px;
         position: fixed;
         z-index: 999;
         /* box-shadow: 0 0 5px rgb(0 0 0 / 70%);  */
