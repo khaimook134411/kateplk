@@ -1,0 +1,126 @@
+
+.container{
+    margin-top: 125px;
+    padding: 30px 20px 20px 20px;
+    background-color: #fff;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center;
+    gap: 2rem; */
+}
+.conMenu{
+    width: 300px;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 70%);
+    /* border: 1px solid rgb(153, 153, 153); */
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* padding: 10px 0px; */
+}
+.catalogMenu{
+    /* margin: 0px 0px 10px 10px; */
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    /* border-bottom: 1px solid; */
+    background-color: rgb(71, 71, 71);
+    color: #fff;
+    text-align: center;
+}
+.catalogMenu:hover{
+    cursor: pointer;
+    /* transform: scale(0.95); */
+    /* background-color: rgb(142, 142, 153); */
+}
+.catalogMenu span{
+    margin-left: 5px;
+    /* transform: scale(0.95); */
+}
+.catalogMenu span:hover{
+    font-size: 18px;
+}
+.conMenu p{
+    font-size: 10px;
+    margin: 10px 10px;
+}
+.menuTypeContainer{
+    margin: 0px 10px 0px 10px;
+}
+.menu{
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* display: flex; */
+    align-items: center;
+
+}
+.menu span{
+    width: 90%;
+    margin-right: 10px;
+}
+.menu:hover{
+    cursor: pointer;
+    color: rgb(102, 106, 109);
+}
+
+.subTypeProduct{
+    background-color: #fff;
+    padding: 10px 10px 0px 10px;
+    /* margin: 0px 20px 20px 20px; */
+    color: rgb(142, 142, 153);
+    font-size: 14px;
+    /* padding-left: 10px; */
+    width: 200px;
+}
+.subTypeProduct div{
+    margin-bottom: 1rem;
+}
+.subTypeProduct div:hover{
+    color: #000;
+    cursor: pointer;
+}
+.iframe{
+    width: 1000px;
+    height: 650px;
+}
+
+@media only screen and (max-width:1200px){
+    .iframe{
+        width: 750px;
+        height: 650px;
+    }
+}
+@media only screen and (max-width:1100px){
+    .iframe{
+        width: 650px;
+        height: 650px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .iframe{
+        width: 600px;
+        height: 650px;
+    }
+}
+@media only screen and (max-width:950px){
+    .container{
+        margin-top: 120px;
+    }
+    .iframe{
+        width: 550px;
+        height: 650px;
+    }
+}
+@media only screen and (max-width:900px){
+    .container{
+        margin-top: 98px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iframe{
+        width: fit-content;
+        height: 500px;
+    }
+
+}
