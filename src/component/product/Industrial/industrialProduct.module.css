@@ -1,6 +1,41 @@
 .container{
-    margin-top: 120px;
-    background-color: red;
-    height: 300px;
+    margin-top: 110px;
+    padding-top: 20px;
+    background-color: #fff;
+    width: 100vw;
+    /* padding: 30px 0px 20px 0px; */
+    display: flex;
+    gap: 2rem;
+}
+.contentContainer{
+    margin-top: 20px;
+}
+.contentContainer h1{
+    color: blue;
+}
+.productContainer{
+    color: rgb(50, 96, 156);
+    font-weight: 900;
+    font-size: 22px;
+}
+.product{
+    display: flex;
+}
+
+.product div p{
+    color: #000;
+    font-size: 16px;
+}
+@media only screen and (max-width:900px){
+    .container{
+        margin-top: 80px;
+    }
+
+}
+@media only screen and (max-width:750px){
+    .container{
+        flex-direction: column;
+        margin-top: 80px;
+    }
     
 }
