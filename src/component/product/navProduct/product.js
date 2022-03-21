@@ -12,7 +12,7 @@ export default function Product() {
             <div className={style.container}>
                 <div className={style.conMenu}>
                     <div className={style.catalogMenu}>
-                        <FontAwesomeIcon icon={faBookOpen} />
+                        {/* <FontAwesomeIcon icon={faBookOpen} /> */}
                         <span> Festo Catalog</span>
                     </div>
                     <p>CATERGORIES PRODUCT</p>

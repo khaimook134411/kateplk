@@ -1,8 +1,11 @@
 
 .container{
-    margin-top: 125px;
-    padding: 30px 20px 20px 20px;
-    background-color: #fff;
+    /* margin-top: 125px; */
+    padding: 0px;
+    background-color: rgb(226, 35, 35);
+    height: 200vh;
+    width: fit-content;
+    z-index: 99;
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center;
@@ -13,6 +16,7 @@
     height: fit-content;
     background-color: #fff;
     box-shadow: 0 0 5px rgb(0 0 0 / 70%);
+    height: 200vh;
     /* border: 1px solid rgb(153, 153, 153); */
     /* background-color: #fff; */
     /* border-radius: 10px; */
@@ -20,7 +24,7 @@
 }
 .catalogMenu{
     /* margin: 0px 0px 10px 10px; */
-    padding: 10px 0px;
+    padding: 20px 0px;
     font-size: 20px;
     font-weight: bold;
     /* border-bottom: 1px solid; */
@@ -35,6 +39,7 @@
 }
 .catalogMenu span{
     margin-left: 5px;
+
     /* transform: scale(0.95); */
 }
 .catalogMenu span:hover{
