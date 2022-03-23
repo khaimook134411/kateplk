@@ -50,7 +50,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                     {/* PRODUCT */}
-                    <div className={page == '/product' ? style.menuActive : style.menu}>
+                    <div className={page == '/product' || page == '/industrial' || page == '/process' ? style.menuActive : style.menu}>
                         <Link to="/product"
                             onClick={() => setPage('/product')}>
                             <div className={style.menuIcon}>

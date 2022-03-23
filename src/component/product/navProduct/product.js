@@ -13,16 +13,19 @@ export default function Product() {
                 <div className={style.conMenu}>
                     <div className={style.catalogMenu}>
                         {/* <FontAwesomeIcon icon={faBookOpen} /> */}
-                        <span> Festo Catalog</span>
+                        <Link to='/product'>
+                            <span> Festo Catalog</span>
+                        </Link>
+
                     </div>
                     <p>CATERGORIES PRODUCT</p>
                     <div className={style.menuTypeContainer}>
-                        <div className={style.menu}
-                            onClick={() => setActState(!actState)}>
-                            <Link to="/product/industrial">
+                        <div className={style.menu}>
+                            <Link to="/industrial">
                                 <span>Festo Industrial-automation</span>
-                                <FontAwesomeIcon icon={faAngleDown} />
                             </Link>
+                            <FontAwesomeIcon icon={faAngleDown} onClick={() => setActState(!actState)} />
+
 
                             {
                                 actState &&
@@ -31,7 +34,7 @@ export default function Product() {
                                 <div className={style.subTypeProduct}>
                                     <div>Actuators</div>
                                     <div>Compressed air treatment</div>
-                                    <div>Connectors, Fittings & Tubings Connectors, Fittings & Tubings</div>
+                                    <div>Connectors, Fittings & Tubings & Tubings Connectors, Fittings</div>
                                     <div>Controllers and software</div>
                                     <div>Function-specific systems</div>
                                     <div>Festo Industrial robots</div>
@@ -46,10 +49,9 @@ export default function Product() {
                             }
 
                         </div>
-                        <div className={style.menu}
-                            onClick={() => setActionState(!actionstate)}>
+                        <div className={style.menu}>
                             <span>Festo Process-automation</span>
-                            <FontAwesomeIcon icon={faAngleDown} />
+                            <FontAwesomeIcon icon={faAngleDown} onClick={() => setActionState(!actionstate)} />
                             {
                                 actionstate &&
                                 <div className={style.subTypeProduct}>

@@ -22,10 +22,9 @@ render(
     <Navbar />
     <Routes>
       <Route path="/" index element={<Home />}></Route>
-      <Route path="/product" element={<IndexProduct />}>
-        {/* <Route path="indexProduct" element={<IndexProduct />}/>
-        <Route path="/industrial" element={<IndustrialProduct />}/> */}
-      </Route>
+      <Route path="/product" element={<IndexProduct />}></Route>
+      <Route path="/indexProduct" element={<IndexProduct />}></Route>
+      <Route path="/industrial" element={<IndustrialProduct />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
     </Routes>
