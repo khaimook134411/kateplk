@@ -17,14 +17,18 @@ export default function Product() {
 
             <div className={style.container}>
                 <div className={style.conMenu}>
-                    <div className={pages == '/product' ? style.catalogMenuActive : style.catalogMenu}>
-
+                    <div>
                         <Link to='/product'
                             onClick={() => setPages('/product')}>
-                            <span> Festo Catalog</span>
-                        </Link>
+                            <div className={pages == '/product' ? style.catalogMenuActive : style.catalogMenu}>
 
+                                <span> Festo Catalog</span>
+                                {/* </Link> */}
+
+                            </div>
+                        </Link>
                     </div>
+
                     <p>CATERGORIES PRODUCT</p>
                     <div className={style.menuTypeContainer}>
 
@@ -71,7 +75,7 @@ export default function Product() {
                             {
                                 actionstate &&
                                 <div className={style.subTypeProduct}>
-                                    <a href='#p1'>Control technology and remote IO</a>
+                                    <a href='#'>Control technology and remote IO</a>
                                     <a href='#p2'>Valve terminals</a>
                                     <a href='#p3'>Pilot valves</a>
                                     <a href='#p4'>Sensor boxes</a>
