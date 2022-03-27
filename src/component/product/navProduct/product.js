@@ -7,7 +7,7 @@ export default function Product() {
     const [actState, setActState] = useState(true)
     const [actionstate, setActionState] = useState(true)
     const [pages, setPages] = useState(window.location.pathname)
-   
+
 
     useEffect(() => {
         setPages(window.location.pathname);
@@ -18,15 +18,16 @@ export default function Product() {
             <div className={style.container}>
                 <div className={style.conMenu}>
                     <div className={pages == '/product' ? style.catalogMenuActive : style.catalogMenu}>
-                       
+
                         <Link to='/product'
-                            onClick={() => setPages('/product') }>
+                            onClick={() => setPages('/product')}>
                             <span> Festo Catalog</span>
                         </Link>
 
                     </div>
                     <p>CATERGORIES PRODUCT</p>
                     <div className={style.menuTypeContainer}>
+
                         <div className={pages == '/industrial' ? style.menuActive : style.menu}>
                             <Link to="/industrial"
                                 onClick={() => setPages('/industrial')}>
@@ -40,41 +41,45 @@ export default function Product() {
 
 
                                 <div className={style.subTypeProduct}>
-                                    <div href='#i1'>Actuators</div>
-                                    <div href='#i2'>Compressed air treatment</div>
-                                    <div href='#i3'>Connectors, Fittings & Tubings & Tubings Connectors, Fittings</div>
-                                    <div href='#i4'>Controllers and software</div>
-                                    <div href='#i5'>Function-specific systems</div>
-                                    <div href='#i6'>Festo Industrial robots</div>
-                                    <div href='#i7'>Other pneumatic components</div>
-                                    <div href='#i8'>Pneumatic valves and valve manifolds</div>
-                                    <div href='#i9'>festo Sensors</div>
-                                    <div href='#i10'>Servo motors and drives</div>
-                                    <div href='#i11'>Vacuum technology</div>
-                                    <div href='#i12'>Vision Systems</div>
+
+                                    <a href='#'>Actuators</a>
+                                    <a href='#i2'>Compressed air treatment</a>
+                                    <a href='#i3'>Connectors, Fittings & Tubings & Tubings Connectors, Fittings</a>
+                                    <a href='#i4'>Controllers and software</a>
+                                    <a href='#i5'>Function-specific systems</a>
+                                    <a href='#i6'>Festo Industrial robots</a>
+                                    <a href='#i7'>Other pneumatic components</a>
+                                    <a href='#i8'>Pneumatic valves and valve manifolds</a>
+                                    <a href='#i9'>festo Sensors</a>
+                                    <a href='#i10'>Servo motors and drives</a>
+                                    <a href='#i11'>Vacuum technology</a>
+                                    <a href='#i12'>Vision Systems</a>
+
                                 </div>
 
                             }
 
+
                         </div>
+
                         <div className={pages == '/process' ? style.menuActive : style.menu}>
                             <Link to='/process'>
                                 <span>Festo Process-automation</span>
                             </Link>
-                            
+
                             <FontAwesomeIcon icon={faAngleDown} onClick={() => setActionState(!actionstate)} />
                             {
                                 actionstate &&
                                 <div className={style.subTypeProduct}>
-                                    <div>Control technology and remote IO</div>
-                                    <div>Valve terminals</div>
-                                    <div>Pilot valves</div>
-                                    <div>Sensor boxes</div>
-                                    <div>Positioners</div>
-                                    <div>Actuators</div>
-                                    <div>Process valves</div>
-                                    <div>Compressed air treatment</div>
-                                    <div>Pneumatic connectors</div>
+                                    <a href='#p1'>Control technology and remote IO</a>
+                                    <a href='#p2'>Valve terminals</a>
+                                    <a href='#p3'>Pilot valves</a>
+                                    <a href='#p4'>Sensor boxes</a>
+                                    <a href='#p5'>Positioners</a>
+                                    <a href='#p6'>Actuators</a>
+                                    <a href='#p7'>Process valves</a>
+                                    <a href='#p8'>Compressed air treatment</a>
+                                    <a href='#p9'>Pneumatic connectors</a>
                                 </div>
                             }
                         </div>

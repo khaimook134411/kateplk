@@ -28,13 +28,13 @@ export default function IndustrialProduct() {
                 <h1>Festo Industrial-automation</h1>
 
                 <div className={style.productContainer}>
-                    <div className={style.product} id='i1'>
+                    <div className={style.product} id='i2'>
                         <img src={i1} />
                         <div>Actuators
                             <p>Festo Actuators Pneumatic linear actuator for opening/closing and control applications with integrated positioner. Suitable for linear valves such as knife gate valves, penstock valves and pinch valves.</p>
                         </div>
                     </div>
-                    <div className={style.product} id='i2'>
+                    <div className={style.product} id='i3'>
                         <img src={i2} />
                         <div>
                             Compressed air treatment
@@ -42,7 +42,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i3'>
+                    <div className={style.product} id='i4'>
                         <img src={i3} />
                         <div>
                             Connectors, Fittings & Tubings & Tubings Connectors, Fittings
@@ -50,7 +50,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i4'>
+                    <div className={style.product} id='i5'>
                         <img src={i4} />
                         <div>
                             Controllers and software
@@ -58,7 +58,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i5'>
+                    <div className={style.product} id='i6'>
                         <img src={i5} />
                         <div>
                             Function-specific systems
@@ -66,7 +66,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i6'>
+                    <div className={style.product} id='i7'>
                         <img src={i6} />
                         <div>
                             Festo Industrial robots
@@ -74,7 +74,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i7'>
+                    <div className={style.product} id='i8'>
                         <img src={i7} />
                         <div>
                             Other pneumatic components
@@ -82,7 +82,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i8'>
+                    <div className={style.product} id='i9'>
                         <img src={i8} />
                         <div>
                             Pneumatic valves and valve manifolds
@@ -90,7 +90,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i9'>
+                    <div className={style.product} id='i10'>
                         <img src={i9} />
                         <div>
                             festo Sensors
@@ -98,7 +98,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i10'>
+                    <div className={style.product} id='i11'>
                         <img src={i10} />
                         <div>
                             Servo motors and drives
@@ -106,7 +106,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product} id='i11'>
+                    <div className={style.product} id='i12'>
                         <img src={i11} />
                         <div>
                             Vacuum technology
