@@ -31,7 +31,7 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className={style.contact}>
-                        <a href="#facebook" target="_blank">
+                        <a href="https://www.facebook.com/KATEPLK/" target="_blank">
                             <img src={facebook} />
                         </a>
 

@@ -3,15 +3,37 @@ import style from './product.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import { firestore } from '../../../firebase/firebase';
 export default function Product() {
     const [actState, setActState] = useState(true)
     const [actionstate, setActionState] = useState(true)
     const [pages, setPages] = useState(window.location.pathname)
 
+    const [listItem, setListItem] = useState([])
+    const [listItem2, setListItem2] = useState([])
+
+
 
     useEffect(() => {
         setPages(window.location.pathname);
+        const industrialRef = firestore.collection('industrial')
+        industrialRef.onSnapshot(docs => {
+            var temp = []
+            docs.forEach(doc => {
+                temp = [...temp , doc.data()]
+            })
+            setListItem(temp)
+        })
+        const processRef = firestore.collection('process')
+        processRef.onSnapshot(docs => {
+            var temp = []
+            docs.forEach(doc => {
+                temp = [...temp , doc.data()]
+            })
+            setListItem2(temp)
+        })
     }, [])
+
     return (
         <>
 
@@ -30,7 +52,9 @@ export default function Product() {
                     </div>
 
                     <p>CATERGORIES PRODUCT</p>
+
                     <div className={style.menuTypeContainer}>
+
 
                         <div className={pages == '/industrial' ? style.menuActive : style.menu}>
                             <Link to="/industrial"
@@ -45,19 +69,15 @@ export default function Product() {
 
 
                                 <div className={style.subTypeProduct}>
-
-                                    <a href='#'>Actuators</a>
-                                    <a href='#i2'>Compressed air treatment</a>
-                                    <a href='#i3'>Connectors, Fittings & Tubings & Tubings Connectors, Fittings</a>
-                                    <a href='#i4'>Controllers and software</a>
-                                    <a href='#i5'>Function-specific systems</a>
-                                    <a href='#i6'>Festo Industrial robots</a>
-                                    <a href='#i7'>Other pneumatic components</a>
-                                    <a href='#i8'>Pneumatic valves and valve manifolds</a>
-                                    <a href='#i9'>festo Sensors</a>
-                                    <a href='#i10'>Servo motors and drives</a>
-                                    <a href='#i11'>Vacuum technology</a>
-                                    <a href='#i12'>Vision Systems</a>
+                                    {
+                                        listItem.map((value,index) => {
+                                            return(
+                                                <a href={`/industrial#${index-1 > -1 ? listItem[index-1].name : ''}`}>
+                                                    {value.name}
+                                                </a>
+                                            )
+                                        })
+                                    }
 
                                 </div>
 
@@ -67,7 +87,8 @@ export default function Product() {
                         </div>
 
                         <div className={pages == '/process' ? style.menuActive : style.menu}>
-                            <Link to='/process'>
+                            <Link to='/process'
+                                onClick={() => setPages('/process')}>
                                 <span>Festo Process-automation</span>
                             </Link>
 
@@ -75,15 +96,16 @@ export default function Product() {
                             {
                                 actionstate &&
                                 <div className={style.subTypeProduct}>
-                                    <a href='#'>Control technology and remote IO</a>
-                                    <a href='#p2'>Valve terminals</a>
-                                    <a href='#p3'>Pilot valves</a>
-                                    <a href='#p4'>Sensor boxes</a>
-                                    <a href='#p5'>Positioners</a>
-                                    <a href='#p6'>Actuators</a>
-                                    <a href='#p7'>Process valves</a>
-                                    <a href='#p8'>Compressed air treatment</a>
-                                    <a href='#p9'>Pneumatic connectors</a>
+                                    {
+                                        listItem2.map((value,index) => {
+                                            return(
+                                                <a href={`/process#${index-1 > -1 ? listItem2[index-1].name : ''}`}>
+                                                    {value.name}
+                                                </a>
+                                            )
+                                        })
+                                    }
+
                                 </div>
                             }
                         </div>

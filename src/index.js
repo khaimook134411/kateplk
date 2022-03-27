@@ -17,6 +17,7 @@ import Popup from './component/popup/popup'
 import IndustrialProduct from './component/product/Industrial/industrialProduct'
 import ProcessProduct from './component/product/Process/processProduct'
 import IndexProduct from './component/product/indexProduct/indexProduct'
+import Admin from './Admin'
 
 render(
   <BrowserRouter>
@@ -29,6 +30,7 @@ render(
       <Route path="/process" element={<ProcessProduct />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
+      <Route path="/admin" element={<Admin />}></Route>
     </Routes>
     <Popup />
     <Footer />
