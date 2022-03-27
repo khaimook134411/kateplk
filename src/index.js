@@ -15,6 +15,7 @@ import Navbar from './component/navbar/navbar'
 import Footer from './component/footer/footer'
 import Popup from './component/popup/popup'
 import IndustrialProduct from './component/product/Industrial/industrialProduct'
+import ProcessProduct from './component/product/Process/processProduct'
 import IndexProduct from './component/product/indexProduct/indexProduct'
 
 render(
@@ -25,6 +26,7 @@ render(
       <Route path="/product" element={<IndexProduct />}></Route>
       <Route path="/indexProduct" element={<IndexProduct />}></Route>
       <Route path="/industrial" element={<IndustrialProduct />}></Route>
+      <Route path="/process" element={<ProcessProduct />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
     </Routes>

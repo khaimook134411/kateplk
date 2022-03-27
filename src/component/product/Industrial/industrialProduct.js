@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './industrialProduct.module.css'
 import Product from './../navProduct/product'
+import industrial from './../../../img/industrial.png'
 import i1 from './../../../img/industrial/actuators.jpeg'
 import i2 from './../../../img/industrial/compressed-air-treatment.jpeg'
 import i3 from './../../../img/industrial/connector.jpeg'
@@ -13,24 +14,27 @@ import i9 from './../../../img/industrial/Sensors.jpeg'
 import i10 from './../../../img/industrial/servo-motor.jpeg'
 import i11 from './../../../img/industrial/vacuum-technology.jpeg'
 import i12 from './../../../img/industrial/vision-system.jpeg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesUp } from '@fortawesome/free-solid-svg-icons'
 export default function IndustrialProduct() {
     return (
         <div className={style.container}>
-         
-                <Product />
-  
-            
+
+            <Product />
+
+
             <div className={style.contentContainer}>
 
                 <h1>Festo Industrial-automation</h1>
+
                 <div className={style.productContainer}>
-                    <div className={style.product}>
+                    <div className={style.product} id='i1'>
                         <img src={i1} />
                         <div>Actuators
                             <p>Festo Actuators Pneumatic linear actuator for opening/closing and control applications with integrated positioner. Suitable for linear valves such as knife gate valves, penstock valves and pinch valves.</p>
                         </div>
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i2'>
                         <img src={i2} />
                         <div>
                             Compressed air treatment
@@ -38,7 +42,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i3'>
                         <img src={i3} />
                         <div>
                             Connectors, Fittings & Tubings & Tubings Connectors, Fittings
@@ -46,7 +50,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i4'>
                         <img src={i4} />
                         <div>
                             Controllers and software
@@ -54,7 +58,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i5'>
                         <img src={i5} />
                         <div>
                             Function-specific systems
@@ -62,7 +66,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i6'>
                         <img src={i6} />
                         <div>
                             Festo Industrial robots
@@ -70,7 +74,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i7'>
                         <img src={i7} />
                         <div>
                             Other pneumatic components
@@ -78,7 +82,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i8'>
                         <img src={i8} />
                         <div>
                             Pneumatic valves and valve manifolds
@@ -86,7 +90,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i9'>
                         <img src={i9} />
                         <div>
                             festo Sensors
@@ -94,7 +98,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i10'>
                         <img src={i10} />
                         <div>
                             Servo motors and drives
@@ -102,7 +106,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i11'>
                         <img src={i11} />
                         <div>
                             Vacuum technology
@@ -110,7 +114,7 @@ export default function IndustrialProduct() {
                         </div>
 
                     </div>
-                    <div className={style.product}>
+                    <div className={style.product} id='i12'>
                         <img src={i12} />
                         <div>
                             Vision Systems
@@ -120,6 +124,15 @@ export default function IndustrialProduct() {
                     </div>
 
                 </div>
+                <div className={style.poster}>
+                    <img src={industrial} />
+                </div>
+                <div className={style.icon}>
+                    <a href="#" rel="nofollow" >
+                        <FontAwesomeIcon icon={faAnglesUp} />
+                    </a>
+                </div>
+
             </div>
 
         </div>
