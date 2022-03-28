@@ -1,16 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.7315e071.css",
-    "main.js": "/static/js/main.06878275.js",
-    "static/js/787.9bb980af.chunk.js": "/static/js/787.9bb980af.chunk.js",
+    "main.css": "/static/css/main.1f224695.css",
+    "main.js": "/static/js/main.6bcf38b1.js",
+    "static/media/industrial.png": "/static/media/industrial.f7180a47329c3588b657.png",
+    "static/media/process.png": "/static/media/process.8b79b90d901e80400d9b.png",
+    "static/media/cover.png": "/static/media/cover.f864f88f6f2d627b5a61.png",
+    "static/media/img3.jpeg": "/static/media/img3.17fe6f4c4078b0a6fe28.jpeg",
+    "static/media/img5.png": "/static/media/img5.9811351b274b27fc1d8a.png",
+    "static/media/logo.png": "/static/media/logo.dd28ddc8f32f0da78c3f.png",
+    "static/media/img4.jpg": "/static/media/img4.0e86c145bba514a41783.jpg",
     "static/media/img1.png": "/static/media/img1.6c879e587ce562e5dfb2.png",
+    "static/media/img5.jpeg": "/static/media/img5.de3c16607f803a8cd438.jpeg",
+    "static/media/img2.png": "/static/media/img2.f17767c04d37f2b7c1ce.png",
+    "static/media/line.png": "/static/media/line.934edda1e0dc84453a95.png",
+    "static/media/Valve-teminals.jpeg": "/static/media/Valve-teminals.c1a7f6bc468da82d1dd5.jpeg",
+    "static/media/Pneumatic-connectors.jpeg": "/static/media/Pneumatic-connectors.288bc73997e11478af86.jpeg",
+    "static/media/Control-technology.jpeg": "/static/media/Control-technology.8adb4f6b3e4ee21eb855.jpeg",
+    "static/media/compressed-air-treatment.jpeg": "/static/media/compressed-air-treatment.751d715cf82c9896cf8e.jpeg",
+    "static/media/function-specific.jpeg": "/static/media/function-specific.270c496847ada65d5e0e.jpeg",
+    "static/media/connector.jpeg": "/static/media/connector.5b878aa123e92157d898.jpeg",
+    "static/media/Compressed-air.jpeg": "/static/media/Compressed-air.b82a89bc09733a0574e7.jpeg",
+    "static/media/Sensors.jpeg": "/static/media/Sensors.e82a9d244293dcda9c2a.jpeg",
+    "static/media/Process-Valves.jpeg": "/static/media/Process-Valves.0ed5655ac05303102099.jpeg",
+    "static/media/vacuum-technology.jpeg": "/static/media/vacuum-technology.8ebd9ce54a6ed52b8691.jpeg",
+    "static/media/Pilo-Valves.jpeg": "/static/media/Pilo-Valves.af35a209be17d64fd643.jpeg",
+    "static/media/controller.jpeg": "/static/media/controller.8648a9ffcd0c0bd32616.jpeg",
+    "static/media/pneumatic-component.jpeg": "/static/media/pneumatic-component.b291a340f12c48440f14.jpeg",
+    "static/media/vision-system.jpeg": "/static/media/vision-system.3bdd3d2acf0a3396e097.jpeg",
+    "static/media/Sensor-Boxes.jpeg": "/static/media/Sensor-Boxes.67f114aa30e1abed3c92.jpeg",
     "index.html": "/index.html",
-    "main.7315e071.css.map": "/static/css/main.7315e071.css.map",
-    "main.06878275.js.map": "/static/js/main.06878275.js.map",
-    "787.9bb980af.chunk.js.map": "/static/js/787.9bb980af.chunk.js.map"
+    "main.1f224695.css.map": "/static/css/main.1f224695.css.map",
+    "main.6bcf38b1.js.map": "/static/js/main.6bcf38b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7315e071.css",
-    "static/js/main.06878275.js"
+    "static/css/main.1f224695.css",
+    "static/js/main.6bcf38b1.js"
   ]
 }
