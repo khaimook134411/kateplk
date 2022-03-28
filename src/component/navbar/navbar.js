@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import style from './navbar.module.css'
 import img1 from './../../img/img1.png'
+import Search from '../search/search'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faMicrochip, faUser, faPhone, faSearch, faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
@@ -31,11 +32,11 @@ export default function Navbar() {
                         </span>
                     </Link>
 
-
-                    <div className={style.search}>
+                    <Search />
+                    {/* <div className={style.search}>
                         <FontAwesomeIcon icon={faSearch} />
                         <input id="" type="search" placeholder="Find Product" />
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className={style.menuContainer}>
