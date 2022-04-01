@@ -3,6 +3,7 @@ import style from './home.module.css'
 import img2 from './../../img/img2.png'
 import img1 from './../../img/img1.png'
 import img5 from './../../img/img5.png'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -40,7 +41,10 @@ export default function Home() {
                 <div>
                     ผู้ใช้งานหรือผู้ออกแบบสามารถนำโค๊ด (Code) ดังกล่าวแจ้งกับฝ่ายขาย เพื่อสอบถามข้อมูลเพิ่มเติม หรือดำเนินการสั่งซื้อสินค้าได้ ซึ่งโค๊ตที่ถูกต้อง จะช่วยลดความผิดพลาดในการสั่งซื้อ และการตรวจสอบ
                 </div>
+                <Link to="/product">
                 <div id="button" className={style.buttonProduct}>PRODUCT --></div>
+                </Link>
+                
             </div>
 
         </div>
