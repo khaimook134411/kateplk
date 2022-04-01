@@ -3,7 +3,8 @@
 .container{
    /* padding: 125px 0px 0px 0px; */
    display: grid;
-   margin-top: 120px;
+   margin-top: 120px; 
+   padding-top: 10px;
    /* grid-template-rows: 1fr 1fr; */
    /* gap: 5rem; */
    justify-content: center;
