@@ -20,19 +20,22 @@ export default function Navbar() {
         <>
             <div className={style.container}>
                 <div className={style.logoContainner}>
-                    <Link to="/"
-                        onClick={() => setPage('/')}>
-                        <img src={img1} />
-                    </Link>
-                    <Link to="/"
-                        onClick={() => setPage('/')}>
-                        <span>
-                            <div className={style.nameCompany1}>KATE PLK </div>
-                            <div className={style.nameCompany2}>บริษัท เคท พีแอลเค จำกัด</div>
-                        </span>
-                    </Link>
+                 
+                        <Link to="/"
+                            onClick={() => setPage('/')}>
+                            <img src={img1} />
+                        </Link>
+                        <Link to="/"
+                            onClick={() => setPage('/')}>
+                            <span>
+                                <div className={style.nameCompany1}>KATE PLK </div>
+                                <div className={style.nameCompany2}>บริษัท เคท พีแอลเค จำกัด</div>
+                            </span>
+                        </Link>
+               
+                        <Search />
+          
 
-                    <Search />
                     {/* <div className={style.search}>
                         <FontAwesomeIcon icon={faSearch} />
                         <input id="" type="search" placeholder="Find Product" />
@@ -90,6 +93,9 @@ export default function Navbar() {
             {//jsx
                 display && (
                     <div className={style.conMobile}>
+                        {/* <div className={style.menuMobile}>
+                            <Search />
+                        </div> */}
                         {/* HOME */}
                         <div className={style.menuMobile}>
                             <Link to="/"
@@ -132,11 +138,9 @@ export default function Navbar() {
                             </Link>
 
                         </div>
-                        {/* search */}
-                        <div className={style.searchMobile}>
-                            <FontAwesomeIcon icon={faSearch} />
-                            <input id="" type="search" placeholder="Find Product" />
-                        </div>
+
+
+
                     </div>
                 )
             }

@@ -3,8 +3,9 @@
 .container{
    /* padding: 125px 0px 0px 0px; */
    display: grid;
-   margin-top: 120px; 
-   padding-top: 10px;
+   /* margin-top: 120px;  */
+
+   padding-top: 8%;
    /* grid-template-rows: 1fr 1fr; */
    /* gap: 5rem; */
    justify-content: center;
@@ -79,9 +80,11 @@
 
 }
 @media only screen and (max-width:1150px){
+
     .conRow1{
-        padding: 50px 0px 50px 50px;
+        padding: 80px 0px 50px 50px;
         gap: 2rem;
+        width: auto;
     }
     .clipShow{
         width: 480px;
@@ -102,9 +105,7 @@
     }
 }
 @media only screen and (max-width:1000px){
-    .conRow1{
-        padding: 50px 50px;
-    }
+    
     .clipShow{
         width: 400px;
         height: 225px;
@@ -128,11 +129,11 @@
 }
 @media only screen and (max-width:900px){
     .conRow1{
-        margin-top: -20px;
+        /* margin-top: auto; */
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px 0px;
+        padding: 60px 0px 30px 0px;
     }
     .clipShow{
         width: 480px;
@@ -176,7 +177,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding:0px 0px 20px 0px;
+        padding:50px 0px 20px 0px;
         gap: 1rem;
     }
     .clipShow{

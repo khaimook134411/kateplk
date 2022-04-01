@@ -8,6 +8,8 @@ export default function Search() {
     const [listItem, setListItem] = useState([])
     const [showItem, setShowItem] = useState([])
 
+    const [display, setdisplay] = useState(true);
+   
 
     const onSearch = (text) => {
         setSearch(text)
@@ -59,8 +61,8 @@ export default function Search() {
                         showItem.map((value, index) => {
                             return (
                                 <a key={index} className={style.valueSearch}
-                                    href={`/industrial#${index - 1 > -1 ? listItem[index - 1].name : ''}` || `/process#${index-1 > -1 ? listItem[index-1].name : ''}`}>
-                                        <FontAwesomeIcon icon={faSearch} />
+                                    href={`/industrial#${index - 1 > -1 ? listItem[index - 1].name : ''}` || `/process#${index - 1 > -1 ? listItem[index - 1].name : ''}`}>
+                                    <FontAwesomeIcon icon={faSearch} />
                                     {value}
                                 </a>
                             )
@@ -68,7 +70,35 @@ export default function Search() {
                     }
                 </div>
             </div>
+            {/* {
+                display && (
+                    <div className={style.conMobile}>
+                        <div className={style.searchMobile}>
+                            <FontAwesomeIcon icon={faSearch} />
+                            <input value={search} id="" type="search" placeholder="Find Product"
+                                onChange={(e) => { onSearch(e.target.value) }} />
+                        </div>
+                        <div className={style.showSearchMobile}>
 
+                            {
+                                showItem.map((value, index) => {
+                                    return (
+                                        <a key={index} className={style.valueSearch}
+                                            href={`/industrial#${index - 1 > -1 ? listItem[index - 1].name : ''}` || `/process#${index - 1 > -1 ? listItem[index - 1].name : ''}`}>
+                                            <FontAwesomeIcon icon={faSearch} />
+                                            {value}
+                                        </a>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+
+
+
+
+                )
+            } */}
 
         </>
 
