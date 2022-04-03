@@ -7,10 +7,10 @@ export default function About() {
             <div className={style.conRow1}>
                 <div className={style.conContent}>
                     <div className={style.headText}>
-                        Festo Industrial-automation
+                        Festo - Pnuematic and Electrical Automation System
                     </div>
                     <div className={style.content}>
-                            บริษัท เคท พีแอลเค จำกัด ได้รับสิทธิ์เป็นตัวแทนจำหน่าย Festo อย่างเป็นทางการ (Festo Thailand, เฟสโต้ ประเทศไทย) สินค้าลิขสิทธิ์แท้ ถูกต้องตามกฏหมายของ Festo, สินค้าทุกชิ้นพร้อมส่งอย่างรวดเร็ว พร้อมบริการให้คำปรึกษา แนะนำโดยทีมงานผู้เชี่ยวชาญด้านนิวเมติกส์ Festo อันดับต้นๆของประเทศ เรายินดีให้บริการทุกท่าน ด้วยความเต็มใจ สอบถามข้อมูล โทร 081 615 7464 หรือที่ katesaraporn@kateplk.co.th
+                            บริษัท เคท พีแอลเค จำกัด ผู้แทนจำหน่าย Festo - Pnuematic and Electrical Automation System สินค้าลิขสิทธิ์แท้ ถูกต้อง สินค้าทุกชิ้นพร้อมส่งอย่างรวดเร็ว พร้อมบริการให้คำปรึกษา แนะนำโดยทีมงานผู้เชี่ยวชาญด้าน Pnuematic and Electrical Automation ด้านนิวเมติกส์ Festo อันดับต้นๆของประเทศ เรายินดีให้บริการทุกท่าน ด้วยความเต็มใจ สอบถามข้อมูล โทร 081 615 7464 หรือเมล katesaraporn@kateplk.co.th
                     </div>
                 </div>
                 <div className={style.Slideshow}>

@@ -28,7 +28,7 @@ export default function Navbar() {
                         <Link to="/"
                             onClick={() => setPage('/')}>
                             <span>
-                                <div className={style.nameCompany1}>KATE PLK </div>
+                                <div className={style.nameCompany1}>KATE PLK Co., Ltd. </div>
                                 <div className={style.nameCompany2}>บริษัท เคท พีแอลเค จำกัด</div>
                             </span>
                         </Link>
