@@ -1,9 +1,7 @@
-import { Slide } from 'react-slideshow-image';
+
 import 'react-slideshow-image/dist/styles.css';
 import './styles.css';
-import img3 from './../../../img/img3.jpeg';
-import img4 from './../../../img/img4.jpg';
-import images from './../../../img/img3.jpeg'
+
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
@@ -23,7 +21,7 @@ const Slideshow = () => {
       <Zoom {...zoomInProperties}>
         {images.map((each, index) => (
           <div key={index} style={{width: "100%"}}>
-            <img style={{ objectFit: "cover", width: "360px" , height: "240px"}} src={each} />
+            <img alt="slide" style={{ objectFit: "cover", width: "360px" , height: "240px"}} src={each} />
           </div>
         ))}
       </Zoom>
